@@ -17,9 +17,14 @@ use Illuminate\Support\Facades\Route;
 
 /** Auth routes */
 /********************** ********* ************* *******************/
+
+
 Route::prefix("auth")->group(function () {
 
    Route::post("login",\App\Http\Controllers\ApiControllers\Auth\LoginController::class);
+   Route::post("request-otp",[\App\Http\Controllers\ApiControllers\Auth\ForgetPasswordController::class,"requestOtp"]);
+   Route::post("verify-otp",[\App\Http\Controllers\ApiControllers\Auth\ForgetPasswordController::class,"verifyOtp"]);
+   Route::post("change-otp-password",[\App\Http\Controllers\ApiControllers\Auth\ForgetPasswordController::class,"changePassword"]);
 });
 
 /********************** ********* ************* *******************/

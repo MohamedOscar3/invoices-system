@@ -33,7 +33,7 @@ class LoginController extends Controller
         }
 
 
-        $token = $user->createToken("Web browser");
+        $token = $user->createToken("WebA browser");
 
         $user->token = $token->plainTextToken;
 
