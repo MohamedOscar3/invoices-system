@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Hash;
 class LoginController extends Controller
 {
 
-    public function __invoke(LoginRequest $request)
+    public function __invoke(LoginRequest $request) : JsonResponse
     {
 
         // Get user email
@@ -33,7 +33,7 @@ class LoginController extends Controller
         }
 
 
-        $token = $user->createToken("Web browser");
+        $token = $user->createToken("WebA browser");
 
         $user->token = $token->plainTextToken;
 

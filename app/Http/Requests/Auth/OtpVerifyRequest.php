@@ -4,8 +4,9 @@ namespace App\Http\Requests\Auth;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class LoginRequest extends FormRequest
+class OtpVerifyRequest extends FormRequest
 {
+
     /**
      * @return string[]
      */
@@ -13,7 +14,7 @@ class LoginRequest extends FormRequest
     {
         return [
             "email"=>"required|email",
-            "password"=>"required",
+            "otp"=>"required|min_digits:6|max_digits:6",
         ];
     }
 

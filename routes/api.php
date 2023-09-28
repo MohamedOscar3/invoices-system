@@ -15,14 +15,26 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-/** Auth routes */
-/********************** ********* ************* *******************/
+                            /** Auth routes */
+/********************** ************************** *******************/
+
+
 Route::prefix("auth")->group(function () {
 
    Route::post("login",\App\Http\Controllers\ApiControllers\Auth\LoginController::class);
+   Route::post("request-otp",[\App\Http\Controllers\ApiControllers\Auth\ForgetPasswordController::class,"requestOtp"]);
+   Route::post("verify-otp",[\App\Http\Controllers\ApiControllers\Auth\ForgetPasswordController::class,"verifyOtp"]);
+   Route::post("change-otp-password",[\App\Http\Controllers\ApiControllers\Auth\ForgetPasswordController::class,"changePassword"]);
 });
 
 /********************** ********* ************* *******************/
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+
+
+                            /** Auth routes */
+/********************** ************************** *******************/
+
+Route::middleware('auth:sanctum')->group(function () {
+   Route::get("user",[\App\Http\Controllers\ApiControllers\UserController::class,"check"]);
 });
+
+/********************** ********* ************* *******************/

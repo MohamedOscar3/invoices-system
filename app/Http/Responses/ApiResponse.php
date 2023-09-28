@@ -2,12 +2,20 @@
 
 namespace App\Http\Responses;
 
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Http\Response;
 
 class ApiResponse
 {
 
-    public static function successResponse($message = null, $statusCode = 200,$data = [])
+    /**
+     * @param string|null $message
+     * @param int $statusCode
+     * @param array<string,string>|JsonResource $data
+     * @return JsonResponse
+     */
+    public static function successResponse(string $message = null, int $statusCode = 200, array|JsonResource $data = []) : JsonResponse
     {
         return response()->json([
             'success' => true,
@@ -16,7 +24,13 @@ class ApiResponse
         ], $statusCode);
     }
 
-    public static function errorResponse($message = "Error",$statusCode = Response::HTTP_BAD_REQUEST, $data = [] )
+    /**
+     * @param string $message
+     * @param int $statusCode
+     * @param array<string,string>|JsonResource $data
+     * @return JsonResponse
+     */
+    public static function errorResponse(string $message = "Error",int $statusCode = Response::HTTP_BAD_REQUEST,array|JsonResource $data = [] ) :JsonResponse
     {
         return response()->json([
             'success' => false,
