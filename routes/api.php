@@ -15,8 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-/** Auth routes */
-/********************** ********* ************* *******************/
+                            /** Auth routes */
+/********************** ************************** *******************/
 
 
 Route::prefix("auth")->group(function () {
@@ -28,6 +28,13 @@ Route::prefix("auth")->group(function () {
 });
 
 /********************** ********* ************* *******************/
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+
+
+                            /** Auth routes */
+/********************** ************************** *******************/
+
+Route::middleware('auth:sanctum')->group(function () {
+   Route::get("user",[\App\Http\Controllers\ApiControllers\UserController::class,"check"]);
 });
+
+/********************** ********* ************* *******************/

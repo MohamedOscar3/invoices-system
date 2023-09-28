@@ -12,8 +12,8 @@ class OtpMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $code;
-    public function __construct($code)
+    public string $code;
+    public function __construct(string $code)
     {
         $this->code = $code;
     }
@@ -33,6 +33,9 @@ class OtpMail extends Mailable
         );
     }
 
+    /**
+     * @return array<string,string>
+     */
     public function attachments(): array
     {
         return [];

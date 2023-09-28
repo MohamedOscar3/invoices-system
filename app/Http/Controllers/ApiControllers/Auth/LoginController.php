@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Hash;
 class LoginController extends Controller
 {
 
-    public function __invoke(LoginRequest $request)
+    public function __invoke(LoginRequest $request) : JsonResponse
     {
 
         // Get user email

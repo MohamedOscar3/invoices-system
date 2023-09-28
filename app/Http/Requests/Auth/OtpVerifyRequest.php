@@ -6,6 +6,10 @@ use Illuminate\Foundation\Http\FormRequest;
 
 class OtpVerifyRequest extends FormRequest
 {
+
+    /**
+     * @return string[]
+     */
     public function rules(): array
     {
         return [
