@@ -1,0 +1,122 @@
+[
+    {
+        "title": "Australian Dollar",
+        "symbol": "AUD",
+        "status": true
+    },
+    {
+        "title": "Brazilian Real",
+        "symbol": "BRL",
+        "status": true
+    },
+    {
+        "title": "Canadian Dollar",
+        "symbol": "CAD",
+        "status": true
+    },
+    {
+        "title": "Chinese Renminbi",
+        "symbol": "CNY",
+        "status": true
+    },
+    {
+        "title": "Czech Koruna",
+        "symbol": "CZK",
+        "status": true
+    },
+    {
+        "title": "Danish Krone",
+        "symbol": "DKK",
+        "status": true
+    },
+    {
+        "title": "Euro",
+        "symbol": "EUR",
+        "status": true
+    },
+    {
+        "title": "Egyptian Pound",
+        "symbol": "EGP",
+        "status": true
+    },
+    {
+        "title": "Hong Kong Dollar",
+        "symbol": "HKD",
+        "status": true
+    },
+    {
+        "title": "Hungarian Forint",
+        "symbol": "HUF",
+        "status": true
+    },
+    {
+        "title": "Japanese Yen",
+        "symbol": "JPY",
+        "status": true
+    },
+    {
+        "title": "Malaysian Ringgit",
+        "symbol": "MYR",
+        "status": true
+    },
+    {
+        "title": "Mexican Peso",
+        "symbol": "MXN",
+        "status": true
+    },
+    {
+        "title": "New Taiwan Dollar",
+        "symbol": "TWD",
+        "status": true
+    },
+    {
+        "title": "New Zealand Dollar",
+        "symbol": "NZD",
+        "status": true
+    },
+    {
+        "title": "Norwegian Krone",
+        "symbol": "NOK",
+        "status": true
+    },
+    {
+        "title": "Philippine Peso",
+        "symbol": "PHP",
+        "status": true
+    },
+    {
+        "title": "Polish Zloty",
+        "symbol": "PLN",
+        "status": true
+    },
+    {
+        "title": "Pound Sterling",
+        "symbol": "GBP",
+        "status": true
+    },
+    {
+        "title": "Singapore Dollar",
+        "symbol": "SGD",
+        "status": true
+    },
+    {
+        "title": "Swedish Krona",
+        "symbol": "SEK",
+        "status": true
+    },
+    {
+        "title": "Swiss Franc",
+        "symbol": "CHF",
+        "status": true
+    },
+    {
+        "title": "Thai Baht",
+        "symbol": "THB",
+        "status": true
+    },
+    {
+        "title": "United States Dollar",
+        "symbol": "USD",
+        "status": true
+    }
+]
