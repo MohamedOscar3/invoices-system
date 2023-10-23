@@ -35,6 +35,20 @@ Route::prefix("auth")->group(function () {
 
 Route::middleware('auth:sanctum')->group(function () {
    Route::get("user",[\App\Http\Controllers\ApiControllers\UserController::class,"check"]);
+
+                            /** Invoices routes */
+    /********************** ************************** *******************/
+
+    Route::resource("invoices",\App\Http\Controllers\ApiControllers\InvoiceController::class);
+
+    /********************** ************************** *******************/
+
+                              /** Currencies routes */
+    /********************** ************************** *******************/
+
+    Route::resource("currencies",\App\Http\Controllers\ApiControllers\CurrencyController::class)->except(["destroy"]);
+
+    /********************** ************************** *******************/
 });
 
 /********************** ********* ************* *******************/
