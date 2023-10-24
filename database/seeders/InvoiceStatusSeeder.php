@@ -9,10 +9,11 @@ class InvoiceStatusSeeder extends Seeder
 {
     public function run()
     {
-        DB::table('invoice_status')->insert([
+        DB::table('invoice_statuses')->insert([
             ['title' => 'pending'],
             ['title' => 'paid'],
             ['title' => 'canceled'],
+            ['title' => 'refunded'],
         ]);
     }
 }
