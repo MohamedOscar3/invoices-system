@@ -185,4 +185,13 @@ return [
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
 
+
+    //paytabs
+    "paytabs"=> [
+        "profile_id"=>env("paytabs_profile_id",null),
+        "server_key"=>env("paytabs_server_key",null),
+        "url"=>env("paytabs_url",null),
+        "redirect_route_name"=>env("paytabs_redirect_route_name","redirect-payment"),
+        "callback_route_name"=>env("paytabs_callback_route_name","callback-payment")
+    ]
 ];

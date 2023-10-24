@@ -16,8 +16,7 @@ return new class extends Migration
             $table->string('title');
             $table->longText('description');
             $table->bigInteger('invoice_status_id')->unsigned()->default(1);
-            $table->foreign('invoice_status_id')->references('id')->on('invoice_status')->onDelete('cascade');
-            $table->json('payment_info')->nullable();
+            $table->foreign('invoice_status_id')->references('id')->on('invoice_statuses')->onDelete('cascade');
             $table->float('total');
             $table->bigInteger('currency_id')->unsigned();
             $table->foreign('currency_id')->references('id')->on('currencies')->onDelete('cascade');

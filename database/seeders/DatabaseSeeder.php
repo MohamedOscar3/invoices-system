@@ -15,5 +15,6 @@ class DatabaseSeeder extends Seeder
         $this->call(InvoiceStatusSeeder::class);
         $this->call(CurrenciesSeeder::class);
         $this->call(UserSeeder::class);
+        $this->call(InvoiceSeeder::class);
     }
 }
